@@ -23,17 +23,15 @@ LLM4KG.ipynb  # 生成知识图谱的代码
 
 upload_file_mongodb.ipynb  # 上传文件到知识图谱的代码
 
-zhipuai_llm.py  # 忘记是否有用了
+database/resource  # 存放待上传到知识图谱中的文件
 
-zhipuai_embedding.py  # 忘记是否有用了
-
-database/resource  # 存放待上传的文件
-
-databse/教材名/part_textbook  # 教材的word文件（多个）
+databse/教材名/part_textbook  # 教材的 word 文件（多个）
 
 databse/教材名/part_keywords/all_keywords.txt  # 手工提取的教材关键词文件
 
 output  # 里面存放 json 文件
 
 ## 运行
-启动服务后，运行两个 jupyter 文件即可
+1. 启动相关服务
+2. 运行 LLM4KG.ipynb 基于教材文档在 Neo4j 中生成知识图谱
+3. 运行 upload_file_mongodb.ipynb，将文件资料作为节点上传到知识图谱
